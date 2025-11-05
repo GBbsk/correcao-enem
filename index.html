@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Painel de Revisão ENEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Painel de Revisão ENEM 2024</h1>
+        <p>Análise visual das questões erradas para focar nos pontos fracos.</p>
+        <nav class="filter-nav">
+            <button class="filter-btn active" data-filter="all">Todas as Áreas</button>
+            <button class="filter-btn" data-filter="mat">Matemática</button>
+            <button class="filter-btn" data-filter="nat">Natureza</button>
+            <button class="filter-btn" data-filter="hum">Humanas</button>
+            <button class="filter-btn" data-filter="lin">Linguagens</button>
+        </nav>
+    </header>
+
+    <main id="question-grid" class="question-grid">
+        </main>
+    
+    <button id="toggle-dark" style="position:fixed;top:10px;right:10px;z-index:1000;">🌙 Tema</button>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
